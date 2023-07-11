@@ -1,0 +1,43 @@
+{
+  "api": {
+    "api1": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "budgettrackerc056f5bc"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "budgettrackerc056f5bc": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_budgettrackerc056f5bc_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "budgettrackerc056f5bc"
+        }
+      ]
+    },
+    "AMPLIFY_function_budgettrackerc056f5bc_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "budgettrackerc056f5bc"
+        }
+      ]
+    }
+  }
+}

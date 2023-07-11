@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/items": {
+      "name": "/items",
+      "lambdaFunction": "budgettrackerc056f5bc",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
